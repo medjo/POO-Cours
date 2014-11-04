@@ -1,0 +1,30 @@
+Manipulation de tableaux en Java
+
+1- Déclaration d'un tableau :
+int[] tab1;// tableau d'entiers
+String[] tab2;//tableau de chaines de caractères
+
+Après initialisation, tab1 et tab2 pointent vers NULL;
+
+2- Initialisation d'un tableau
+
+tab1 = new int[10];
+
+int n = 10;
+tab2 = new String[n];
+
+Après initialisation, tab1 et tab2 pointent chacun vers une zone contigue alouée;
+
+3- Manipulation des éléments d'un tableau
+
+tab1[4] = 42;//5ème élément
+
+Remarque : A l'initialisation d'un tableu,  tous ses élémets sont initialisés à leur valeur par défaut (0,null)
+
+4- Remarque : tableaux à plusieurs dimensions
+in[][] matrix = new int[][42];
+
+5- Longueur d'un tableau :
+l = tab1.length;
+
+Attention : Longueur non modifiable, donc ne pas écrire tab1.length = 42 ; !!!!!
