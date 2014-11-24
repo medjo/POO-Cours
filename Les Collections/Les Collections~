@@ -1,0 +1,33 @@
+17/11/14				Les Collections
+
+Pour stocker une collection d'éléments, on peut :
+- utiliser un tableau : String[] tab = new String[42];
+								tab[i];
+		Inconvénients : - taille fixe => pour ajouter des éléments à la volée, pas simple... (Problèmes de débordements,...)
+						- certaines opérations sont couteuse : accéder au min, max ,  savoir si un élément existe... => Thêta(n)
+						- trier, etc...
+						
+Java fournit un ensemble de structures permettant de gérer efficacement une collection d'objets. Le package collection fournit :
+	- des interfaces pour les différents types de collections
+	- des réalisations concrètes de ses interfaces
+	
+Différence entre les deux : structures sous-jacentes différents => complexité des opérations différentes.
+
+ArrayList : tableau extensible
+cf photo 1.
+	- ajout d'un élément : pire cas Thêta(n)
+	MAIS pire cas peu fréquent ^^
+	
+LinkedList : liste doublement chaînée
+	- accès à un élément i : Thêta(n)
+	- ajout d'un élément i : O(1)
+	- retrait d'un élément en début ou fin : Thêta(1)
+	- autres opération : Thêta(n)
+
+
+	=> LinkedList : très utile comme implentation de structures dans lesquelles on n'accède qu'au 1er ou dernier élément
+	=> piles, files
+	
+Set : Ensemble
+Ne possède pas de méthode supplémentaires (par rapport à l'interface-mère ), mais sémantique <ensemble>  éléments NON dupliqués
+
