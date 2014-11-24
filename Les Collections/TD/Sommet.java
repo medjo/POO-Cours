@@ -20,6 +20,10 @@ public class Sommet {
     public void addSuccesseur(Sommet s) {
         successeurs.add(s);
     }
+
+    public Iterator<Sommet> iterSuccesseurs() {
+        return this.successeurs.iterator();
+    }
     
     @Override
     public boolean equals(Object o) {
@@ -27,5 +31,10 @@ public class Sommet {
             return ((Sommet)o).label.equals(this.label);
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.etiquette.hashCode();
     }
 }

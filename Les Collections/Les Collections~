@@ -31,3 +31,4 @@ LinkedList : liste doublement chaînée
 Set : Ensemble
 Ne possède pas de méthode supplémentaires (par rapport à l'interface-mère ), mais sémantique <ensemble>  éléments NON dupliqués
 
+HashSet : table de Hashage
